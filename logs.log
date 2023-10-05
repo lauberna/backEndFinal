@@ -1,0 +1,17 @@
+[2023-09-14 00:10:56] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay pacientes por listar
+[2023-09-14 00:10:56] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay pacientes por listar
+[2023-09-14 00:10:56] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay odontologos por listar
+[2023-09-14 00:10:56] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: no hay Turnos por listar
+[2023-09-14 00:10:56] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay odontologos por listar
+[2023-09-14 00:11:03] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: apellido invalido o faltante
+[2023-09-14 00:11:05] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: dni invalido o faltante
+[2023-09-14 00:11:07] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: datos de la direccion invalidos o faltantes
+[2023-09-14 00:11:09] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay odontologos por listar
+[2023-09-14 00:11:09] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: No hay odontologos por listar
+[2023-09-14 00:11:09] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: no hay Turnos por listar
+[2023-09-14 00:11:15] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: no hay Turnos por listar
+[2023-09-14 00:11:22] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: Odontologo con matricula: asdf, ya existente
+[2023-09-14 00:11:23] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: Odontologo con matricula: asdf, ya existente
+[2023-09-14 00:11:27] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.ResourceNotFoundExeption: no hay Turnos por listar
+[2023-09-14 00:12:08] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: fehca invalida o faltante
+[2023-09-14 00:12:17] [ ERROR] [ExeptionHandlerController:29] com.ClinicaOdontologicaIntegrador.integrador.Exceptions.InvalidParameterExeption: ya posee el limite de turnos (2) disponobles para el paciente: laureano, eliminelos o pruebe editandolos

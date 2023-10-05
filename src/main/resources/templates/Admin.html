@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editar Turnos</title>
+    <script src="./jsAdmin/App.js" defer type="module"></script>
+    <!-- <script src="/turnos.js" defer></script> -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Clinica Odontologica</h1>
+      <button id="actT" class="btnA">Actualizar</button>
+      <a th:href="@{/logout}" class="btn btn-primary">Cerrar Sesión</a>
+    </header>
+    <main>
+      <section id="pacientes" class="sec">
+        <h2>Lista de Pacientes</h2>
+        <ol id="listaP"></ol>
+        <div>
+          <button id="crear">Añadir paciente</button>
+        </div>
+        <p id="err" class="e" style="display: none"></p>
+      </section>
+      <section id="turnos" class="sec">
+        <h2>Lista de turnos</h2>
+        <ul id="turnos-list">
+          <!-- Aquí se mostrarán los turnos obtenidos de la API -->
+        </ul>
+        <div>
+          <button id="crearT">Añadir turno</button>
+        </div>
+        <p id="errT" class="e" style="display: none"></p>
+      </section>
+      <section id="odontologos" class="sec">
+        <h2>Lista de Odontolgos</h2>
+        <ol id="listaO"></ol>
+        <div>
+          <button id="crearO">Añadir odontologo</button>
+        </div>
+        <p id="errO" class="e" style="display: none"></p>
+      </section>
+    </main>
+    <div id="miModal" class="modal">
+      <div class="modal-contenido">
+        <span id="cerrarModal" class="cerrar">&times;</span>
+        <form id="form">
+          <label for="inpN">Nombre:</label>
+          <input
+            id="inpN"
+            name="nombre"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Juan"
+          />
+          <label for="inpA">Apellido:</label>
+          <input
+            id="inpA"
+            name="apellido"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Pérez"
+          />
+          <label for="dni">DNI:</label>
+          <input
+            id="dni"
+            name="dni"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: 12345678"
+          />
+          <label for="calle">Calle:</label>
+          <input
+            id="calle"
+            name="calle"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Calle Principal 123"
+          />
+          <label for="ciudad">Ciudad:</label>
+          <input
+            id="ciudad"
+            name="ciudad"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Ciudad Ejemplo"
+          />
+          <button id="cancelar" type="button">Cancelar</button>
+          <button id="guardar" type="submit">Guardar</button>
+          <p id="errM" class="e" style="opacity: 0">.</p>
+        </form>
+      </div>
+    </div>
+    <div id="miModalO" class="modal">
+      <div class="modal-contenido">
+        <span id="cerrarModalO" class="cerrar">&times;</span>
+        <form id="formO">
+          <label for="inpNO">Nombre:</label>
+          <input
+            id="inpNO"
+            name="nombre"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Juan"
+          />
+          <label for="inpAO">Apellido:</label>
+          <input
+            id="inpAO"
+            name="apellido"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: Pérez"
+          />
+          <label for="inpMO">Matricula:</label>
+          <input
+            id="inpMO"
+            name="Matricula"
+            type="text"
+            value=""
+            required
+            placeholder="Ejemplo: ABC2345"
+          />
+          <button id="cancelarO" type="button">Cancelar</button>
+          <button id="guardarO" type="submit">Guardar</button>
+          <p id="errMO" class="e" style="opacity: 0">.</p>
+        </form>
+      </div>
+    </div>
+    <div id="miModalT" class="modal">
+      <div class="modal-contenido">
+        <span id="cerrarModalT" class="cerrar">&times;</span>
+        <div id="edit-form">
+          <form id="edit-turno-form">
+            <label for="hora">Hora:</label>
+            <input
+              id="hora"
+              name="hora"
+              type="datetime-local"
+              required
+              placeholder="Ejemplo: 10:00"
+            />
+
+            <label for="paciente-select">Selecciona un Paciente:</label>
+            <select id="paciente-select">
+              <!-- Aquí se cargarán los pacientes obtenidos de la API -->
+            </select>
+
+            <label for="odontologo-select">Selecciona un Odontólogo:</label>
+            <select id="odontologo-select">
+              <!-- Aquí se cargarán los odontólogos obtenidos de la API -->
+            </select>
+            <button id="cancelarT" type="button">Cancelar</button>
+            <button id="guardar-btn" type="submit">Guardar</button>
+            <p id="errMT" class="e" style="opacity: 0">.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
